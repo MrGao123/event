@@ -69,3 +69,7 @@
         })
     })
     ```
+## 3.jQuery的事件解绑
+* 1.$(selector).unbind(); ---- 解绑所有事件
+* 2.$(selector).undelegate(); ---- 解绑所有事件
+
