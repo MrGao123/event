@@ -58,7 +58,7 @@
                 <script src="./jquery-1.12.4.js"></script>
                 <script>
                     $('ul').on('click','li',function(e){
-                        console.log(e)
+                        console.log(e。target)
                     })
                     $('ul').on('click',function(e){
                         console.log(e.target);
