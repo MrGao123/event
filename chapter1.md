@@ -5,4 +5,8 @@
 > 简单事件绑定 >> bind >> delegate >> on
 
 * 2.1 bind事件绑定
-    + $(selector).bind(eventType,handler)/$(selector).mouseover()/...
+    + $(selector).bind(eventType,handler)
+    
+    优点：可以绑定多个事件，即eventType可以是：'click mousemove';
+    
+    缺点：不能为动态创建出来的元素添加事件。
