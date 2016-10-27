@@ -13,4 +13,4 @@
 * 2.2 delegate事件绑定
     + $(parentElement).delegate(subElement, eventType, handler);
     
-    可以为动态创建出来的元素绑定事件（原理：冒泡机制）
+    可以为动态创建出来的元素绑定事件（原理：事件的冒泡机制）
