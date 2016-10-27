@@ -11,4 +11,6 @@
     
     缺点：不能为**动态创建**出来的元素添加事件。
 * 2.2 delegate事件绑定
-    + $(parentElement).delegate(subElement, eventType, handler)
+    + $(parentElement).delegate(subElement, eventType, handler);
+    
+    可以为动态创建出来的元素绑定事件（原理：冒泡机制）
