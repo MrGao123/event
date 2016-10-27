@@ -52,4 +52,20 @@
                 </script>
     ```
     
-* 不知道你有没有注意到在事件绑定的几种方式中，一直有那么一个默默无闻的参数静静的徜徉在方括号中，无人问津。（不用现在返回去看了，我告诉你，那就是data）
+* 不知道你有没有注意到在事件绑定的几种方式中，一直有那么一个默默无闻的参数静静的徜徉在方括号中，无人问津。没有错的，那就是data。
+
+    话不多说，看代码
+
+    关于data的用法：
+
+    ```js
+    $('ul').on('click','li',{name:'zhangsan',age:10}, function(e){
+        $('ul > li').each(function(index, item){
+            //只有当条件成立时，才会执行传入的事件处理函数。
+            if ( item === e.target ) {
+                console.log(e.data);
+                //Object {name: "zhangsan", age: 10}
+            }
+        })
+    })
+    ```
