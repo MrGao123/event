@@ -95,7 +95,29 @@
 
 第三种方式的触发，会执行对应的事件处理函数，但是不会触发浏览器的默认效果。
 
-```
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<button>点击触发</button>
+<input type="text">
+<script src="./jquery-1.12.4.js"></script>
+<script>
+    $('input').focus(function(){
+        console.log('111');
+    })
+    $('button').click(function(){
+        //$('input').focus(); //控制台输出111  文本框蓝色边框阴影出现  鼠标在文本框内闪烁
+        //$('input').trigger('focus');    //效果同上
+        $('input').triggerHandler('focus'); //控制台输出111 但没有其他效果
+    })
+</script>
+</body>
+</html>
 
 ```
 
