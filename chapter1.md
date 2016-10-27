@@ -4,5 +4,5 @@
 
 > 简单事件绑定 >> bind >> delegate >> on
 
-* 2.1 简单事件绑定
+* 2.1 bind事件绑定
     + $(selector).click(handler)/$(selector).mouseover()/...
