@@ -93,7 +93,7 @@
 * 2.trigger触发：$(selector).trigger(eventType);
 * 3.triggerHandler触发：$(selector).triggerHandler(eventType);
 
-第三种方式的触发，会执行对应的事件处理函数，但是不会触发浏览器的默认效果。
+> 第三种方式的触发，会执行对应的事件处理函数，但是不会触发浏览器的默认效果。
 
 ```html
 <!doctype html>
