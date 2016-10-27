@@ -63,6 +63,7 @@
                     //3.然后通过判断
                     /*$('ul > li').each(function(index, item){
                         //只有当条件成立时，才会执行传入的事件处理函数。
+                        //这里的事件对象把它当成是父元素相应的事件处理函数的参数就行
                         if ( item === e.target ) {
                             handler(e);
                         }
