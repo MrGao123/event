@@ -83,6 +83,8 @@
     + 只解绑自身事件，不解绑代理事件：在绑定事件的时候，事件处理函数不用匿名函数，直接传入指定的函数，在解绑的时候，就只解绑指定函数。
     
     ```
-    function (aaa) {}
-    $(selector).on('click',aaa);
+    function aaa() {};
+    $(selector).on('click',aaa);    //自身事件
+    $(selector).on('click',subElement,handler);    //代理事件
+    $(selector).off('click',aaa);    //只解绑指定的自身事件
     ```
