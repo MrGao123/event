@@ -70,6 +70,8 @@
     })
     ```
 ## 3.jQuery的事件解绑
-* 1.$(selector).unbind(); ---- 解绑所有事件
+* 1.unbind()    
+    + $(selector).unbind(); ---- 解绑所有事件
+    + $(selector).unbind('click') --- 解绑指定事件
 * 2.$(selector).undelegate(); ---- 解绑所有事件
 
