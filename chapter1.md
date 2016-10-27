@@ -15,5 +15,5 @@
     
     可以为动态创建出来的元素绑定事件（原理：事件的冒泡机制）
 * 2.3 on事件绑定
-    + $(selector).on(eventType[,subElement],handler[,isCapture])
+    + $(selector).on(eventType[,subElement],[data],handler)
  
