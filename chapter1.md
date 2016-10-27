@@ -73,5 +73,10 @@
 * 1.unbind()    
     + $(selector).unbind(); ---- 解绑所有事件
     + $(selector).unbind('click') --- 解绑指定事件
-* 2.$(selector).undelegate(); ---- 解绑所有事件
+* 2.undelegate()
+    + $(selector).undelegate(); ---- 解绑所有事件
+    + $(selector).undelegate('click'); ---- 解绑指定事件
+* 3.off()
+    + $(selector).off() ---- 解绑所有事件
+    + $(selector).off('click') ---- 解绑指定事件
 
