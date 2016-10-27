@@ -16,8 +16,4 @@
     可以为动态创建出来的元素绑定事件（原理：事件的冒泡机制）
 * 2.3 on事件绑定：将事件绑定做了一个统一。
     + $(selector).on(eventType[,subElement],[data],handler);     
-    + 事件委托的实现原理;
-    
-    ```js
-        
-    ```
+* jQuery的事件委托
