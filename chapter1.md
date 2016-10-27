@@ -111,9 +111,12 @@
         console.log('111');
     })
     $('button').click(function(){
-        //$('input').focus(); //控制台输出111  文本框蓝色边框阴影出现  鼠标在文本框内闪烁
-        //$('input').trigger('focus');    //效果同上
-        $('input').triggerHandler('focus'); //控制台输出111 但没有其他效果
+        //$('input').focus(); 
+        //控制台输出111  文本框蓝色边框阴影出现  鼠标在文本框内闪烁
+        //$('input').trigger('focus');    
+        //效果同上
+        $('input').triggerHandler('focus'); 
+        //控制台输出111 但没有其他效果
     })
 </script>
 </body>
