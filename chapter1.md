@@ -79,4 +79,4 @@
 * 3.off()
     + $(selector).off() ---- 解绑所有事件（包括代理事件）
     + $(selector).off('click') ---- 解绑指定事件
-    + 
+    + $(selector).off('click', '**')
