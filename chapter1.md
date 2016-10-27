@@ -61,8 +61,10 @@
                     //1.先找到ul元素
                     //2.然后找到ul下的li
                     //3.然后通过判断
-                    $('ul > li').each(function(item){
-
+                    $('ul > li').each(function(index, item){
+                        if ( item === e.target ) {
+                            handler();
+                        }
                     })
                     $('ul').on('click','li',function(e){
                         console.log(e.target)
