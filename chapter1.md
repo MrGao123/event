@@ -56,9 +56,8 @@
 
     话不多说，看代码
 
-    关于data的用法：
-
     ```js
+    //关于data的用法：
     $('ul').on('click','li',{name:'zhangsan',age:10}, function(e){
         $('ul > li').each(function(index, item){
             //只有当条件成立时，才会执行传入的事件处理函数。
