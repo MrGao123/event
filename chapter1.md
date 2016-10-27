@@ -60,7 +60,11 @@
                     //以下代码执行顺序为：
                     //1.先找到ul元素
                     //2.然后找到ul下的li
-                    //3.
+                    //3.然后通过判断
+                    if ($('ul > li').indexOf(e.target) = -1) {
+                        //退出事件处理函数，不再往下执行。
+                        return false;                   
+                    }
                     $('ul').on('click','li',function(e){
                         console.log(e.target)
                     })
