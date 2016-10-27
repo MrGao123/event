@@ -26,6 +26,46 @@
 
     ```
        1.首先我们得知道：事件对象中有个target属性：即e.target--->指的是当前触发事件的目标元素。 
+       2.然后事件委托机制的原理就浮现了：
+       <!doctype html>
+        <html lang="en">
+            <head>
+                 <meta charset="UTF-8">
+                 <title>Document</title>
+                 <style>
+                     * {
+                         margin: 0;
+                         padding: 0;
+                       }
+                    ul {
+                         list-style: none;
+                       }
+                    li {
+                         line-height: 30px;
+                         background-color: red;
+                         margin: 30px;
+                        }
+                 </style>
+            </head>
+            <body>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <script src="./jquery-1.12.4.js"></script>
+                <script>
+                    $('ul').on('click','li',function(e){
+                        console.log(e)
+                    })
+                    $('ul').on('click',function(e){
+                        console.log(e.target);
+                    })
+                </script>
+            </body>
+        </html>    
     ```
     
 
