@@ -90,4 +90,6 @@
     ```
 ## 4.jQuery的事件触发
 * 1.简单触发：$(selector).click();
+* 2.trigger触发：$(selector).trigger(eventType);
+* 3.triggerHandler触发：$(selector).triggerHandler(eventType);
 
