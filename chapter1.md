@@ -88,3 +88,6 @@
     $(selector).on('click',subElement,handler);    //代理事件
     $(selector).off('click',aaa);    //只解绑指定的自身事件
     ```
+## 4.jQuery的事件触发
+* 1.简单触发：$(selector).click();
+
