@@ -62,6 +62,7 @@
                     //2.然后找到ul下的li
                     //3.然后通过判断
                     $('ul > li').each(function(index, item){
+                        //只有当条件成立时，才会执行传入的事件处理函数。
                         if ( item === e.target ) {
                             handler(e);
                         }
