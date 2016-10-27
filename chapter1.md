@@ -63,7 +63,7 @@
                     //3.然后通过判断
                     $('ul > li').each(function(index, item){
                         if ( item === e.target ) {
-                            handler();
+                            handler(e);
                         }
                     })
                     $('ul').on('click','li',function(e){
