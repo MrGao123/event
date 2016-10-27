@@ -57,8 +57,12 @@
                 </ul>
                 <script src="./jquery-1.12.4.js"></script>
                 <script>
+                    //以下代码执行顺序为：
+                    //1.先找到ul元素
+                    //2.然后找到ul下的li
+                    //3.
                     $('ul').on('click','li',function(e){
-                        console.log(e。target)
+                        console.log(e.target)
                     })
                     $('ul').on('click',function(e){
                         console.log(e.target);
