@@ -57,7 +57,7 @@
     话不多说，看代码
 
     ```js
-    //关于data的用法:  事件对象.data = data 
+    //关于data的用法:  事件对象.data = data 通过给事件对象添加data属性把数据传输到事件处理函数里
     $('ul').on('click','li',{name:'zhangsan',age:10}, function(e){
         $('ul > li').each(function(index, item){
             //只有当条件成立时，才会执行传入的事件处理函数。
